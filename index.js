@@ -26,7 +26,6 @@ async function run() {
     const database = client.db("BIKE_SALES");
     const productsCollection = database.collection("products");
     const usersCollection = database.collection("users");
-    const reviewsCollection = database.collection("reviews");
 
      //// GET PRODUCTS API ///
      app.get("/products", async (req, res) => {
